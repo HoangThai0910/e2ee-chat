@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 
-<!-- 	
-	This file is rendered by express.js, when the home url of the chat is opened in a browser.
-	It includes jQuery, socket.io.js (it is automatically served by the socket.io library), 
-	and a few more JavaScript files that you should check out.
--->
+
 
 <html>
 
@@ -27,7 +23,7 @@
 </head>
 
 <body>
-	<!-- Login Section -->
+	<!-- Login -->
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
@@ -36,7 +32,7 @@
 						<img id="yourAvatar" src="img/unnamed.png">
 					</span>
 
-					<span class="login100-form-title">Register</span>
+					<span class="login100-form-title">Đăng ký</span>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter username">
 						<input id="yourName" class="input100" type="text" name="username" placeholder="Username">
@@ -55,7 +51,7 @@
 
 					<div class="container-login100-form-btn">
 						<button id="loginButton" class="login100-form-btn">
-							Login
+							Đăng nhập
 						</button>
 					</div>
 
@@ -63,9 +59,9 @@
 			</div>
 		</div>
 	</div>
-	<!-- .Login Section -->
+	<!-- .Login -->
 
-	<!-- Chat Section -->
+	<!-- Chat -->
 	<div id="frame" style="display: none;">
 		<div id="sidepanel">
 			<div id="profile">
@@ -85,7 +81,7 @@
 				<label for="">
 					<i class="fa fa-search" aria-hidden="true"></i>
 				</label>
-				<input type="text" placeholder="Search contacts...">
+				<input type="text" placeholder="Tìm kiếm người dùng...">
 			</div>
 			<div id="contacts">
 				<ul id="userContacts"></ul>
@@ -94,11 +90,7 @@
 			<div id="bottom-bar">
 				<button id="addchannel">
 					<i class="fa fa-group fa-fw" aria-hidden="true"></i>
-					<span>Add Channel</span>
-				</button>
-				<button id="settings">
-					<i class="fa fa-cog fa-fw" aria-hidden="true"></i>
-					<span>Settings</span>
+					<span>Tạo nhóm chat</span>
 				</button>
 			</div>
 		</div>
@@ -113,7 +105,7 @@
 			</div>
 			<div class="message-input">
 				<div class="wrap">
-					<input type="text" placeholder="Write your message..." />
+					<input type="text" placeholder="Nhập tin nhắn..." />
 					<i class="fa fa-paperclip attachment" aria-hidden="true"></i>
 					<button class="submit">
 						<i class="fa fa-paper-plane" aria-hidden="true"></i>
@@ -122,7 +114,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- .Chat Section -->
+	<!-- .Chat -->
 
 
 	<!--===============================================================================================-->

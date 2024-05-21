@@ -4,11 +4,9 @@
 // Create the encryption object for asymmetric RSA algorithm.
 var rsa = new JSEncrypt();
 
-// define the characters to pick from
 var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz*&-%/!?*+=()";
 
-// create a key for symmetric encryption
-// pass in the desired length of your key
+// Tao khoa cho ma hoa AES
 function generateKey(keyLength) {
     var randomstring = '';
 

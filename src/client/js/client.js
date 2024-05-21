@@ -385,7 +385,8 @@ function appendMessage(data) {
 	// get this channel symmetric key to decrypt message
 	var symmetricKey = getChannels()[currentChannelName].channelKey;
 	var msg = data.msg.symDecrypt(symmetricKey)
-
+	//Kiem tra tin nhan ma hoa
+	//var msg = data.msg
 	// add to self screen
 	var messagesScreen = $(".messages");
 	messagesScreen.find("ul").append(`<li class="${data.state}"><img src="${data.avatar}" title="${data.name}" /><p>${data.msgHeader}${msg}</p></li>`); // append message to end of page
@@ -422,12 +423,8 @@ function getNoncePassword(pass) {
 	return pass.symEncrypt(socket.id);
 }
 
-//
-//
-// 
+
 // ------------------------------------ Jquery DOM Events -------------------------------------
-// 
-//
 (function ($) {
 	"use strict";
 
